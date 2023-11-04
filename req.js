@@ -2,6 +2,7 @@ let timer = document.getElementById('timer');
 
 let twitchID = 'YOUR_ID_HERE'; //The id of the channel you want to listen to, and the token must be the owner of the channel
 let twitchToken = 'YOUR_TOKEN_HERE'; // token witch scope: 'channel:read:redemptions'
+let finalText = 'FINI'; // Final text
 
 let time = { //Starting time
 	seconds: 0,
@@ -28,8 +29,8 @@ let loop = setInterval(() => {
 	time.seconds--;
 
 	if (time.seconds <= 0 && time.minutes <= 0) {
-		timer.textContent = 'FINI'; // Final text
-		timer.style.color = 'red';
+		timer.textContent = finalText;
+		timer.style.color = 'red'; // You can change the color of the text here
 		clearInterval(loop);
 		return;
 	}
