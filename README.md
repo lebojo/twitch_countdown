@@ -36,3 +36,4 @@ function processRewards(rewardName)
 }
 ```
 
+*Thanks Lutti for the idea*
