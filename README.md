@@ -15,9 +15,12 @@ let time = { //Starting time
 	minutes: 5
 }
 ```
+(for twitchToken, you can have your here: https://twitchtokengenerator.com/, don't forget to check the scope "channel:read:redemptions")
 
-## Add reward effect
+## Add/Modify Reward
 If you want to add some reward control, you can follow this in req.js (line 12):
+
+⚠️​**THE TITLE MUST MATCH EXACTLY THE REWARD TITLE YOU PUT ON TWITCH**⚠️​
 ```js
 function processRewards(rewardName)
 {
@@ -35,5 +38,14 @@ function processRewards(rewardName)
 	}
 }
 ```
+
+## Add to OBS:
+Step:
+1. Download project files
+2. Create a new Browser source in OBS
+3. Go into the settings of the new Browser source (double click on it)
+4. Check the "local file" in Browser source settings
+5. Locate the "countdown.html" file you just downloaded
+6. Enjoy :)
 
 *Thanks Lutti for the idea*
